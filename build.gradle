@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+sourceCompatibility = 1.7
+compileJava.options.encoding = 'UTF-8'
+repositories {
+jcenter()
+
+maven{url"https://jitpack.io" }
+}
+
+dependencies {
+	compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.21'
+	compile group: 'net.bramp.ffmpeg', name: 'ffmpeg', version: '0.6.2'
+	compile 'com.github.yangjie10930:EpMedia:v0.8.2'
+	testCompile 'junit:junit:4.12'  
+}
